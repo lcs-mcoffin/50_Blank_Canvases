@@ -13,8 +13,36 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
 
+let canvas = Canvas(width: 400, height: 300)
+canvas.fillColor = Color(hue: 206, saturation: 12, brightness: 26, alpha: 100)
+
+canvas.drawRectangle(centreX: 250, centreY: 250, width: 500, height: 500)
+
+
+canvas.drawShapesWithFill = true
+canvas.drawShapesWithBorders = false
+
+for x in stride(from: 0, through: 500, by: 90) {
+    
+    for y in stride(from: 500, through: 0, by: -90) {
+        
+        
+        
+        // Set the saturation
+        canvas.fillColor = Color.white
+        
+        
+        
+        canvas.drawEllipse(centreX: x, centreY: y, width: 50, height: 50)
+        
+        canvas.fillColor = Color(hue: 206, saturation: 12, brightness: 26, alpha: 100)
+
+        
+        canvas.drawEllipse(centreX: x, centreY: y, width: 25, height: 25)
+    }
+    
+}
 /*:
  ## Add your code below
  
