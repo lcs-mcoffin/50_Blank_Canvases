@@ -13,8 +13,24 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 500, height: 500)
 
+canvas.drawShapesWithFill = false
+canvas.drawEllipse(centreX: 250, centreY: 250, width: 200, height: 200)
+
+canvas.drawEllipse(centreX: 150, centreY: 150, width: 200, height: 200)
+
+canvas.drawEllipse(centreX: 350, centreY: 350, width: 200, height: 200)
+
+canvas.drawEllipse(centreX: 250, centreY: 150, width: 200, height: 200)
+
+canvas.drawEllipse(centreX: 250, centreY: 350, width: 200, height: 200)
+
+canvas.drawEllipse(centreX: 250, centreY: 450, width: 200, height: 200)
+
+canvas.drawEllipse(centreX: 250, centreY: 150, width: 200, height: 200)
+
+canvas.drawEllipse(centreX: 250, centreY: 250, width: 200, height: 200)
 /*:
  ## Add your code below
  
